@@ -1,0 +1,8 @@
+streamlit
+langchain
+huggingface
+numpy
+pandas
+scikit-lear
+ollama
+llama-index
