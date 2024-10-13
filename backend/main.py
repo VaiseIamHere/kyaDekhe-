@@ -3,12 +3,12 @@ import numpy as np
 import google.generativeai as genai
 from langchain.prompts import PromptTemplate
 
-from env import api_key
+api_key = "AIzaSyDOSxuJMXlB5su56qhVTDr2KP0q7CX9uAk"
 
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel()
-df = pd.read_csv("MoviesOnStreamingPlatforms_updated.csv")
-
+df = pd.read_csv(r"backend\MoviesOnStreamingPlatforms_updated.csv")
+print(df.head())
 df_cleaned = df.dropna()
 
 prompt_template = """
